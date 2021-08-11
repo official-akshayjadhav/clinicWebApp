@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact us | clinic web application</title>
+
+        <!-- external bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!-- font awasome resources -->
+        <link
+            href="dist\fontawesome-free-5.15.3-web\css\all.css"
+            rel="stylesheet"
+        />
+        <script defer src="dist\fontawesome-free-5.15.3-web\js\all.js"></script>
+
+        <!-- custom CSS -->
+        <link href="dist/stylesheet/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mx-3">
+                <div class="container-fluid">
+                    <img
+                        src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+                        alt=""
+                        width="30"
+                        height="24"
+                    />
+                    <a
+                        href="file:///C:/Users/akshay/OneDrive/Desktop/clinicWebApp/index.html"
+                        class="navbar-brand h1"
+                        >&nbsp;&nbsp;My Clinic</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar"
+                        aria-controls="navbar"
+                        aria-expanded="false"
+                        aria-lable="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Book appointment</a
+                                >
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    My Account
+                                </a>
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Log in</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Sign up</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success"
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- main section -->
+        <main>
+            <!-- contact information -->
+            <section class="p-5" style="background-color: #e1fff1">
+                <h2 class="text-center mb-5">Contact US</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <div
+                            class="card text-center m-auto"
+                            style="width: 18rem"
+                        >
+                            <div class="card-header">
+                                <i
+                                    class="fas fa-phone fa-5x"
+                                    style="color: #198754"
+                                ></i>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <a
+                                        href="tel:+911234567890"
+                                        class="btn btn-success"
+                                        >+91 1234567890</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div
+                            class="card text-center m-auto"
+                            style="width: 18rem"
+                        >
+                            <div class="card-header">
+                                <i
+                                    class="fas fa-envelope-open-text fa-5x"
+                                    style="color: #ffc107"
+                                ></i>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <a
+                                        href="mailto:contact@example.com"
+                                        class="btn btn-warning"
+                                        >contact@example.com</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div
+                            class="card text-center m-auto"
+                            style="width: 18rem"
+                        >
+                            <div class="card-header">
+                                <i
+                                    class="fas fa-video fa-5x"
+                                    style="color: #0dcaf0"
+                                ></i>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <a
+                                        href="https://meet.google.com/sup-fwyw-nvw"
+                                        class="btn btn-info"
+                                        >sup-fwyw-nvw</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact form & address -->
+            <section class="">
+                <div class="row">
+                    <!-- contact us form -->
+                    <div class="col-10 col-lg-5 m-5 border">
+                        <h3 class="text-center">Write your query</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label
+                                    for="exampleFormControlInput1"
+                                    class="form-label"
+                                    >Email address</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleFormControlInput1"
+                                    placeholder="name@example.com"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactNumber" class="form-label"
+                                    >Contact Number</label
+                                >
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="contactNumber"
+                                    placeholder="+91 1234567890"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                    >Message</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                            <div>
+                                <input
+                                    type="submit"
+                                    value="SUBMIT"
+                                    class="btn btn-primary float-end"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-10 col-lg-5 m-5 border">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15125.336052938601!2d73.78308580000001!3d18.604040499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b99aa0efa6a9%3A0xb2af60ef3772cb44!2sJEEVANJYOTI%20HOSPITAL!5e0!3m2!1sen!2sin!4v1628679638008!5m2!1sen!2sin"
+                            width="600"
+                            height="450"
+                            class="w-100 m-auto"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer style="background-color: #343a40">
+            <section>
+                <div class="row pt-5 px-5">
+                    <div class="col">
+                        <h5 class="text-white">Heading 1</h5>
+
+                        <ul>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 1</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 2</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 3</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 4</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-white">Heading 2</h5>
+
+                        <ul>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 1</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 2</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 3</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 4</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-white">Heading 3</h5>
+
+                        <ul>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 1</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 2</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 3</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 4</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-white">Heading 4</h5>
+
+                        <ul>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 1</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 2</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 3</a
+                                >
+                            </li>
+                            <li class="list-unstyled">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none text-white"
+                                    >link 4</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pb-5 pt-3 px-5" style="background-color: #28292b">
+                    <span class="text-white">copyright web dev batch</span>
+                </div>
+            </section>
+        </footer>
+
+        <!-- external bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
