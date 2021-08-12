@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact us | clinic web application</title>
+        <title>User Profile | clinic web application</title>
 
         <!-- external bootstrap CSS -->
         <link
@@ -56,14 +56,12 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a
-                                    class="nav-link text-info"
-                                    href="contactUs.html"
+                                <a class="nav-link" href="contactUs.html"
                                     >Contact us</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"
+                                <a class="nav-link text-info" href="#"
                                     >Book appointment</a
                                 >
                             </li>
@@ -114,147 +112,249 @@
                 </div>
             </nav>
         </header>
-        <!-- main section -->
-        <main>
-            <!-- contact information -->
-            <section class="p-5" style="background-color: #e1fff1">
-                <h2 class="text-center mb-5">Contact US</h2>
-                <div class="row">
-                    <div class="col-4">
-                        <div
-                            class="card text-center m-auto"
-                            style="width: 18rem"
-                        >
-                            <div class="card-header">
-                                <i
-                                    class="fas fa-phone fa-5x"
-                                    style="color: #198754"
-                                ></i>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <a
-                                        href="tel:+911234567890"
-                                        class="btn btn-success"
-                                        >+91 1234567890</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div
-                            class="card text-center m-auto"
-                            style="width: 18rem"
-                        >
-                            <div class="card-header">
-                                <i
-                                    class="fas fa-envelope-open-text fa-5x"
-                                    style="color: #ffc107"
-                                ></i>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <a
-                                        href="mailto:contact@example.com"
-                                        class="btn btn-warning"
-                                        >contact@example.com</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div
-                            class="card text-center m-auto"
-                            style="width: 18rem"
-                        >
-                            <div class="card-header">
-                                <i
-                                    class="fas fa-video fa-5x"
-                                    style="color: #0dcaf0"
-                                ></i>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <a
-                                        href="https://meet.google.com/sup-fwyw-nvw"
-                                        class="btn btn-info"
-                                        >sup-fwyw-nvw</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- contact form & address -->
-            <section class="">
-                <div class="row">
-                    <!-- contact us form -->
-                    <div class="col-10 col-lg-5 m-5 border">
-                        <h3 class="text-center">Write your query</h3>
-                        <form>
-                            <div class="mb-3">
-                                <label
-                                    for="exampleFormControlInput1"
-                                    class="form-label"
-                                    >Email address</label
-                                >
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="exampleFormControlInput1"
-                                    placeholder="name@example.com"
-                                />
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactNumber" class="form-label"
-                                    >Contact Number</label
-                                >
-                                <input
-                                    type="tel"
-                                    class="form-control"
-                                    id="contactNumber"
-                                    placeholder="+91 1234567890"
-                                />
-                            </div>
-                            <div class="mb-3">
-                                <label
-                                    for="exampleFormControlTextarea1"
-                                    class="form-label"
-                                    >Message</label
-                                >
-                                <textarea
-                                    class="form-control"
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                ></textarea>
-                            </div>
-                            <div>
-                                <input
-                                    type="submit"
-                                    value="SUBMIT"
-                                    class="btn btn-primary float-end"
-                                />
-                            </div>
-                        </form>
+        <!-- main section -->
+        <main class="m-5">
+            <div class="row">
+                <!-- user info -->
+                <div class="col-12 col-lg-4 p-3 border">
+                    <div>
+                        <h5>User Information</h5>
                     </div>
-                    <div class="col-10 col-lg-5 m-5 border">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15125.336052938601!2d73.78308580000001!3d18.604040499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b99aa0efa6a9%3A0xb2af60ef3772cb44!2sJEEVANJYOTI%20HOSPITAL!5e0!3m2!1sen!2sin!4v1628679638008!5m2!1sen!2sin"
-                            width="600"
-                            height="450"
-                            class="w-100 m-auto"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                        ></iframe>
+
+                    <hr />
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-3 col-form-label"
+                            >Name</label
+                        >
+                        <div class="col-sm-9">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="staticEmail"
+                                value="FirstName LastName"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-3 col-form-label"
+                            >Contact No.</label
+                        >
+                        <div class="col-sm-9">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="staticEmail"
+                                value="+91 1234567890"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-3 col-form-label"
+                            >Email</label
+                        >
+                        <div class="col-sm-9">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="staticEmail"
+                                value="email@example.com"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label
+                            for="exampleFormControlTextarea1"
+                            class="form-label"
+                            >Address</label
+                        >
+                        <textarea
+                            class="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                        ></textarea>
                     </div>
                 </div>
-            </section>
+
+                <!-- appointment list -->
+                <div class="col-12 col-lg-8 p-3 border">
+                    <div class="clearfix">
+                        <h4 class="float-start">Appointment List</h4>
+                        <button class="btn btn-primary float-end">
+                            create new appointment
+                        </button>
+                    </div>
+                    <hr />
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Appointment No: #10
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="badge bg-primary"
+                                        >2021-08-12</span
+                                    >&nbsp;&nbsp;<span class="badge bg-success"
+                                        >booked</span
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <p>Appointment Date: 2021-08-12</p>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            Appointment Status:
+                                            <span class="badge bg-success"
+                                                >booked</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <p>Estimated Time: 03:00 PM</p>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            Appointment Reason: This is sample
+                                            appointment reason
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-sm btn-danger">
+                                        cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Appointment No: #10
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="badge bg-primary"
+                                        >2021-08-12</span
+                                    >&nbsp;&nbsp;<span class="badge bg-success"
+                                        >booked</span
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <p>Appointment Date: 2021-08-12</p>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            Appointment Status:
+                                            <span class="badge bg-success"
+                                                >booked</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <p>Estimated Time: 03:00 PM</p>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            Appointment Reason: This is sample
+                                            appointment reason
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-sm btn-danger">
+                                        cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Appointment No: #10
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="badge bg-primary"
+                                        >2021-08-12</span
+                                    >&nbsp;&nbsp;<span class="badge bg-success"
+                                        >booked</span
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <p>Appointment Date: 2021-08-12</p>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            Appointment Status:
+                                            <span class="badge bg-success"
+                                                >booked</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <p>Estimated Time: 03:00 PM</p>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            Appointment Reason: This is sample
+                                            appointment reason
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-sm btn-danger">
+                                        cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+
+        <!-- footer section -->
         <footer style="background-color: #343a40">
             <section>
                 <div class="row pt-5 px-5">

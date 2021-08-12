@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Home | clinic web application</title>
-
         <!-- external bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -31,7 +30,7 @@
                         width="30"
                         height="24"
                     />
-                    <a href="ìndex.html" class="navbar-brand h1"
+                    <a href="index.html" class="navbar-brand h1"
                         >&nbsp;&nbsp;My Clinic
                     </a>
                     <button
@@ -48,7 +47,9 @@
                     <div id="navbar" class="collapse navbar-collapse">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="ìndex.html">Home</a>
+                                <a class="nav-link text-info" href="index.html"
+                                    >Home</a
+                                >
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="aboutUs.html"
@@ -82,12 +83,20 @@
                                     aria-labelledby="navbarDropdown"
                                 >
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="#"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#loginModal"
                                             >Log in</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
+                                        <a
+                                            class="dropdown-item"
+                                            href="#"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#signupModal"
                                             >Sign up</a
                                         >
                                     </li>
@@ -788,6 +797,169 @@
                 </div>
             </section>
         </footer>
+
+        <!-- modal section -->
+        <!-- 1. login modal -->
+        <div
+            id="loginModal"
+            tabindex="-1"
+            class="modal"
+            aria-labelledby="loginModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalTitle">
+                            User Login
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label"
+                                    >Email address</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="loginEmail"
+                                    placeholder="name@example.com"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="loginPassword"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">
+                                    login <i class="fas fa-sign-in-alt"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        New user? please
+                        <a
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#signupModal"
+                            >signup</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. signup modal -->
+        <div
+            id="signupModal"
+            tabindex="-1"
+            class="modal"
+            aria-labelledby="signupModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalTitle">
+                            User Signup
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="signupName" class="form-label"
+                                    >Full Name</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="signupName"
+                                    placeholder="enter your full name"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupContact" class="form-label"
+                                    >Contact number</label
+                                >
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="signupContact"
+                                    placeholder="enter your contact number"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label"
+                                    >Email address</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="loginEmail"
+                                    placeholder="name@example.com"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                    >Address</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="loginPassword"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">
+                                    Signup <i class="fas fa-plus-circle"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        Existing user? please
+                        <a
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#loginModal"
+                            >login</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- external bootstrap JS -->
         <script
