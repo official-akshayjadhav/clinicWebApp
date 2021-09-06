@@ -1,0 +1,15 @@
+{
+  "name": "backendapi",
+  "version": "1.0.0",
+  "description": "backend api for clinic application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "akshay jadhav",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "mysql": "^2.18.1"
+  }
+}
